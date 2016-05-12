@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:clickable="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        style="@style/CardView.Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/iv_food_item"
+        android:layout_width="121dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/dog1"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="贵宾犬"
+                android:textColor="@color/primary_text" />
+
+         <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="家乡：欧洲
+气质特点：聪明，活泼，性情优良，极易近人，是一种忠实的犬种
+历史：贵宾犬曾经是贵妇人的宠物。18世纪繁殖成小的长卷毛犬. "
+                android:textColor="@color/secondary_text" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
